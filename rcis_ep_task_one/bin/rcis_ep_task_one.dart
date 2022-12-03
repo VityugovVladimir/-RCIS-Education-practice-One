@@ -5,18 +5,18 @@ import 'dart:math';
 
 // Практическая 1.1
 // // задание 1
-void main() {
-  List<int> nums = List.generate(10, (i) => Random().nextInt(100) + 0);
-  int min = 0;
+// void main() {
+//   List<int> nums = List.generate(15, (i) => Random().nextInt(100) + 0);
+//   int min = 0;
 
-  for (int i = 1; i < nums.length; i++) {
-    if (nums[i] < nums[min]) {
-      min = i;
-    }
-  }
-  print(nums);
-  print(min);
-}
+//   for (int i = 1; i < nums.length; i++) {
+//     if (nums[i] < nums[min]) {
+//       min = i;
+//     }
+//   }
+//   print(nums);
+//   print(min);
+// }
 
 // задание 2
 // void main() {
