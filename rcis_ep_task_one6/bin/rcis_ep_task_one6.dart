@@ -61,3 +61,45 @@ import 'dart:math';
 //   }
 //   print(sum);
 //   }
+
+
+// zadanie 5
+void main() {
+  List <int> nums = [];
+  int sum = 0;
+  while( 1!= 0){
+    try{
+      stdout.write('Ввeдите число: ');
+      int a = int.parse(stdin.readLineSync()!);
+      if(a > 0){
+        break;
+      }
+    } 
+    catch(e){
+      print('данные неверные');
+      continue;
+    }
+  } 
+  while(1 > 0){
+    try{
+      stdout.write('Ввeдите число: ');
+      int num = int.parse(stdin.readLineSync()!);
+      if (num < 0){
+        print('Вы ввели отрицательное число');
+        break;
+      }
+      else{
+        nums.add(num);
+      }
+    }
+    catch(e){
+      print('данные не верны');
+    }
+  }
+  for(int i = 0; i< nums.length; i++){
+    if(nums[i] % 2 == 0){
+      sum+= nums[i];
+    }
+  }
+  print('сумма делящихся положительных чисел = $sum');
+}
